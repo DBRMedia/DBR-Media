@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+    font-family: 'integral_cfbold';
+    src: url('/fonts/Integral/integralcf-bold-webfont.woff2') format('woff2'),
+         url('/fonts/Integral/integralcf-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  header, nav, article, section, aside, footer, figure{
+    display: block;
+  }
+  body{
+    margin: 0px;
+  }
+  body>div{
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0% auto;
+    background: url(images/background/Fondo1.png) center 0% /100% no-repeat;
+  
+  }
+  h1{
+    margin: 0%;
+  }
+  h1>a{
+    margin: 0% 7.5%;
+    padding: 3% 0%;
+    display: block;
+    text-indent: -9999px;
+    background: url(images/icons/DBRMedia_logo.png) left center /12% no-repeat;
+  }
+  figure{margin: 0px;}
+  img{width: 100%;}
+  section{
+    margin: 0% 0% 5%;
+    padding: 0% 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  section>div{
+    padding: 0% 4%;
+  }
+  section>.home, section>.leftfigure{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  section>figure, section>.left{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  section>div>h2{
+    color: rgba(228, 19, 118, 1);
+    font-family: 'integral_cfbold';
+    font-size: calc(32px + (40 - 32)*(100vw - 320px)/(1920 - 320));
+  }
+  h3{
+    color: rgba(228, 19, 118, 1);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .queOfrecemos{
+    padding: 5% 6%;
+    background: url(images/background/pleca.png) center 70% /180% no-repeat;
+  }
+  .queOfrecemos>div>p{
+    color: rgba(255, 255, 255, 1);
+  }
+
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(16px + (20 - 16)*(100vw - 320px)/(1920 - 320));
+  }
+  ul{
+    list-style-position: inside;
+  }
+  ul>li{
+    padding-bottom: 2%;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .ofrecemos>li{
+    list-style-image: url(images/icons/Check.png);
+    list-style-position: outside;
+  }
+  .noOfrecemos>li{
+    list-style-image: url(images/icons/Uncheck.png);
+    list-style-position: outside;
+  }
+  .hide{
+    display: none;
+  }
+  .list ul>li{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat', sans-serif;
+  }
+  button{
+    margin: 2% 0%;
+    padding: 3% 5%;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(127, 90, 240, 1);
+    font-size: calc(16px + (20 - 16)*(100vw - 320px)/(1920 - 320));
+    border: none;
+    border-radius: 52px;
+    box-shadow: 0px 30px 45px rgba(22, 22, 22, 0.16);
+    transition: transform 0.2s ease;
+  }
+  button:hover{
+    transform: translate(0, -6px);
+    box-shadow: -10px 10px 25px 0 rgba(127, 90, 240, 1);
+  }
+  button>.font{
+    font-family: 'integral_cfbold';
+  }
+  body>div>section:nth-child(5){
+    margin-bottom: 0%;
+  }
+  footer{
+    padding: 20% 20% 6%;
+    text-align: center;
+    align-items: center;
+    background: url(images/background/footer.png) center bottom /175% no-repeat;
+  }
+  footer>h2{
+    color: rgba(228, 19, 118, 1);
+    font-family: 'integral_cfbold';
+    font-size: calc(32px + (40 - 32)*(100vw - 320px)/(1920 - 320));
+  }
+  footer>p{
+    color: rgba(255, 255, 255, 1);
+  }
+  footer>p>a{
+    color: rgba(228, 19, 118, 1);
+  }
+  footer>button{
+    scale: 80%;
+  }
+  footer>figure{
+    padding: 0% 40%;
+  }
+  address{
+    padding-top: 5%;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(16px + (16 - 16)*(100vw - 320px)/(1920 - 320));
+  }
